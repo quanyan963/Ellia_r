@@ -118,6 +118,7 @@ public class MainActivity extends MvpBaseActivity<MainPresenter> implements Main
                     }
                 }else {
                     return false;
+
                 }
             }
         });
