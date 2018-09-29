@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Ellia</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="no_support_ble">Phone does not support BLE !</string>
+    <string name="input_limit">Over the limit！</string>
+    <string name="turn_on_device">Please turn on your device&#8230;</string>
+    <string name="conn_failure">Connect timeout,please try again.</string>
+    <string name="dis_open_device_hint">Please go to the setup interface and connect the specified equipment first.</string>
+    <string name="no_hint">No longer ask</string>
+    <string name="gps_not_open_hint">The GPS is not open and may not operate properly !</string>
+    <string name="exit_program_hint">Again according to exit the program</string>
+    <string name="music">Music</string>
+    <string name="flame">Flame</string>
+    <string name="setting">Setting</string>
+    <string name="percent">%</string>
+    <string name="instruction">Instruction</string>
+    <string name="about_us">About us</string>
+    <string name="home">Home</string>
+    <string name="dis_conn">Your speaker cannot be found.Please power it on or check your connection</string>
+    <string name="scan">Scan Music&#8230;</string>
+
+    <!-- sound -->
+    <string name="tranquil">Tranquil</string>
+    <string name="floating">Floating</string>
+    <string name="_new">New</string>
+    <string name="open">Open</string>
+    <string name="gentle">Gentle</string>
+    <string name="pure">Pure</string>
+    <string name="morning">Morning</string>
+    <string name="golden">Golden</string>
+
+    <string name="reflection">Reflection</string>
+    <string name="lotus">Lotus</string>
+    <string name="world">World</string>
+    <string name="horizon">Horizon</string>
+    <string name="waves">Waves</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="dew">Dew</string>
+    <string name="sunrise">Sunrise</string>
+
+    <!-- main -->
+    <string name="sound">sound</string>
+    <string name="aroma">aroma</string>
+    <string name="light">light</string>
+    
+    <!-- aroma -->
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="intermittent">Intermittent</string>
+
+    <string name="_5">5</string>
+    <string name="_10">10</string>
+    <string name="_15">15</string>
+    <string name="_20">20</string>
+    <string name="_30">30</string>
+    <string name="_60">60</string>
+    <string name="_90">90</string>
+
+    <string name="minutes">minutes</string>
+    <string name="milliliters">milliliters</string>
+
+    <!-- light -->
+    <string name="selected">selected</string>
+    <string name="hide">Hide</string>
+</resources>

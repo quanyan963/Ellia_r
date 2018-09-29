@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  >
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64_y"
+        android:layout_marginLeft="@dimen/dp_16_x"
+        android:layout_marginRight="@dimen/dp_16_x">
+        <!--android:clickable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:focusable="true"-->
+
+        <RelativeLayout
+            android:id="@+id/layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_16_x"
+                />
+
+            <com.txtled.ellia_r.widget.CustomTextView
+                android:id="@+id/tv_left"
+                style="@style/main_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_16_x" />
+
+            <com.txtled.ellia_r.widget.CustomTextView
+                android:id="@+id/tv_left_second"
+                style="@style/main_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10_x"
+                android:layout_toRightOf="@+id/tv_left" />
+        </RelativeLayout>
+
+        <SeekBar
+            style="@style/seek_bar_yellow"
+            android:id="@+id/seek_bar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/iv_item_right"
+            android:layout_toRightOf="@+id/layout_left" />
+
+        <com.txtled.ellia_r.widget.CustomTextView
+            android:id="@+id/tv_right"
+            style="@style/main_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8_x"
+            android:textColor="@color/color_bg"
+            android:textSize="@dimen/dp_14_x"
+            android:layout_toLeftOf="@+id/iv_item_right"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16_x" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

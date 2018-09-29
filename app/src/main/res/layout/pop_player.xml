@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/player_bg">
+    <RelativeLayout
+        android:id="@+id/rl_player_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tab_sounds_selected"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/dp_16_x"/>
+        <com.txtled.ellia_r.widget.CustomTextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1111111111"/>
+    </RelativeLayout>
+
+    <com.txtled.ellia_r.widget.ItemLayout
+        android:id="@+id/il_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_player_top"
+        app:showSeekBar="true"
+        app:sbMax="100">
+
+    </com.txtled.ellia_r.widget.ItemLayout>
+    <RelativeLayout
+        android:id="@+id/rl_player_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il_volume"
+        android:layout_marginTop="@dimen/dp_12_y"
+        android:layout_marginBottom="@dimen/dp_32_y">
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/iv_rewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/iv_play"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="@dimen/dp_46_x"/>
+        <ImageView
+            android:id="@+id/iv_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_play"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="@dimen/dp_46_x"/>
+
+    </RelativeLayout>
+</RelativeLayout>

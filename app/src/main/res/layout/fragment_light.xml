@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_light_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_color_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/dp_16_x"
+            android:background="@drawable/item_bg_unselected">
+            <com.txtled.ellia_r.widget.CustomTextView
+                android:id="@+id/tv_hide"
+                android:text="@string/hide"
+                style="@style/main_tv"
+                android:textColor="@color/main_text_color"
+                android:paddingLeft="@dimen/dp_16_x"
+                android:paddingTop="@dimen/dp_6_y"
+                android:paddingBottom="@dimen/dp_6_y"
+                android:paddingRight="@dimen/dp_6_x"
+                android:layout_marginTop="@dimen/dp_16_y"/>
+            <com.txtled.ellia_r.widget.ColorPicker
+                android:id="@+id/color_picker"
+                android:layout_width="@dimen/dp_260_y"
+                android:layout_height="@dimen/dp_260_y"
+                android:layout_marginTop="@dimen/dp_16_y"
+                android:layout_centerHorizontal="true"/>
+
+            <com.txtled.ellia_r.widget.ItemLayout
+                android:id="@+id/il_lightness"
+                style="@style/main_tv"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/color_picker"
+                app:showSeekBar="true"
+                app:ivLeft="@mipmap/icon_slider_brightness_u"
+                android:layout_marginBottom="@dimen/dp_16_y"
+                app:sbMax="100">
+
+            </com.txtled.ellia_r.widget.ItemLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46_y"
+            android:foregroundGravity="center"
+            android:src="@mipmap/plus"
+            android:layout_marginTop="@dimen/dp_16_y"
+            android:background="@drawable/item_bg_unselected"
+            android:layout_marginLeft="@dimen/dp_16_x"
+            android:layout_marginRight="@dimen/dp_16_x"/>
+
+        <com.txtled.ellia_r.widget.RoundTextView
+            android:id="@+id/rtv_select"
+            style="@style/main_tv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46_y"
+            android:layout_below="@+id/rl_color_view"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp_16_y"
+            android:layout_marginRight="@dimen/dp_16_x"
+            android:layout_marginLeft="@dimen/dp_16_x"
+            app:rtvBgColor="@color/colorAccent"
+            app:rtvRadius="@dimen/dp_14_x"
+            android:text="@string/selected" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_light"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_light_top"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

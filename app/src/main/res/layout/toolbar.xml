@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_76_y"
+        android:paddingTop="@dimen/dp_20_y"
+        android:background="@color/color_bg"
+        app:title="@string/app_name">
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

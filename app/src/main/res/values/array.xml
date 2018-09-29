@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sound_title">
+        <item>@string/tranquil</item>
+        <item>@string/floating</item>
+        <item>@string/_new</item>
+        <item>@string/open</item>
+        <item>@string/gentle</item>
+        <item>@string/pure</item>
+        <item>@string/morning</item>
+        <item>@string/golden</item>
+    </string-array>
+
+    <string-array name="sound_song">
+        <item>@string/reflection</item>
+        <item>@string/lotus</item>
+        <item>@string/world</item>
+        <item>@string/horizon</item>
+        <item>@string/waves</item>
+        <item>@string/relaxation</item>
+        <item>@string/dew</item>
+        <item>@string/sunrise</item>
+    </string-array>
+
+    <string-array name="aroma_power">
+        <item>@string/low</item>
+        <item>@string/medium</item>
+        <item>@string/high</item>
+        <item>@string/intermittent</item>
+    </string-array>
+
+    <string-array name="timer_time">
+        <item>@string/_15</item>
+        <item>@string/_30</item>
+        <item>@string/_60</item>
+        <item>@string/_90</item>
+    </string-array>
+
+    <string-array name="aroma_ml">
+        <item>@string/_5</item>
+        <item>@string/_10</item>
+        <item>@string/_15</item>
+        <item>@string/_20</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.txtled.ellia_r.widget.RoundTextView
+        android:id="@+id/tv_light_color"
+        style="@style/main_tv"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="@dimen/dp_46_y"
+        android:layout_marginLeft="@dimen/dp_16_x"
+        android:layout_marginRight="@dimen/dp_16_x"
+        android:layout_marginBottom="@dimen/dp_16_y"
+        app:rtvRadius="@dimen/dp_14_x"
+        android:text="@string/selected"/>
+
+</RelativeLayout>
