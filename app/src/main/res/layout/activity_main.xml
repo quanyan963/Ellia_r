@@ -29,7 +29,7 @@
 
     <!--</android.support.v4.widget.NestedScrollView>-->
 
-    <com.txtled.ellia_r.widget.CustomScrollView
+    <ScrollView
         android:id="@+id/sv_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -57,7 +57,7 @@
 
         </RelativeLayout>
 
-    </com.txtled.ellia_r.widget.CustomScrollView>
+    </ScrollView>
 
     <FrameLayout
         android:id="@+id/fl_player"

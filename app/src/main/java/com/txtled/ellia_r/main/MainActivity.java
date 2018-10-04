@@ -1,7 +1,6 @@
 package com.txtled.ellia_r.main;
 
 
-import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -14,6 +13,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 
 import com.txtled.ellia_r.R;
 import com.txtled.ellia_r.aroma.AromaFragment;
@@ -27,7 +27,6 @@ import com.txtled.ellia_r.sound.SoundAdapter;
 import com.txtled.ellia_r.sound.SoundFragment;
 import com.txtled.ellia_r.utils.Utils;
 import com.txtled.ellia_r.widget.ColorPicker;
-import com.txtled.ellia_r.widget.CustomScrollView;
 import com.txtled.ellia_r.widget.CustomTextView;
 import com.txtled.ellia_r.widget.SlideViewPager;
 import com.txtled.ellia_r.widget.TintRadioButton;
@@ -36,7 +35,6 @@ import com.txtled.ellia_r.widget.listener.MusicPlayerListener;
 import java.util.ArrayList;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 import static com.txtled.ellia_r.constant.Constants.PAGE_LIGHT;
 
@@ -72,7 +70,7 @@ public class MainActivity extends MvpBaseActivity<MainPresenter> implements Main
     @BindView(R.id.fl_player)
     FrameLayout flPlayer;
     @BindView(R.id.sv_main)
-    CustomScrollView svMain;
+    ScrollView svMain;
 
     private Fragment mAromaFragment;
     private PagerAdapter mPagerAdapter;
@@ -106,22 +104,6 @@ public class MainActivity extends MvpBaseActivity<MainPresenter> implements Main
         initViewPager();
         initTimer();
         flPlayer.setOnClickListener(this);
-        svMain.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (mPagerAdapter.getItem(pageIndex) instanceof LightFragment){
-                    if (Utils.inRangeOfView(((LightFragment)mPagerAdapter.getItem(pageIndex)).
-                            getColorPicker(),motionEvent)){
-                        return true;
-                    }else {
-                        return false;
-                    }
-                }else {
-                    return false;
-
-                }
-            }
-        });
     }
 
     private void initTimer() {
@@ -332,7 +314,7 @@ public class MainActivity extends MvpBaseActivity<MainPresenter> implements Main
     public boolean dispatchTouchEvent(MotionEvent ev) {
         for (MyTouchListener listener : myTouchListeners) {
             if (listener != null) {
-
+                svMain.requestDisallowInterceptTouchEvent(!listener.onTouchEvent(ev));
                 vPager.setIsScanScroll(listener.onTouchEvent(ev));
             }
         }
