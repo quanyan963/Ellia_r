@@ -120,6 +120,7 @@ public class MainActivity extends MvpBaseActivity<MainPresenter> implements Main
         rlTimer.setNestedScrollingEnabled(false);
         rlTimer.setAdapter(mTimerAdapter);
         mTimerAdapter.initList();
+
     }
 
     private void initViewPager() {
